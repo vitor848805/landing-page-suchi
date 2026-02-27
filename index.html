@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sushi Laddin — Restaurante de Sushi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a class="logo" href="#">Sushi Laddin</a>
+        <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+        <ul class="nav-menu">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#reserva">Reservas</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header id="home" class="hero">
+      <div class="overlay"></div>
+      <div class="container hero-content">
+        <h1>Sabores do Japão em Cada Mordida</h1>
+        <p>Peças artesanais, ingredientes frescos e uma experiência acolhedora.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#reserva">Reservar Agora</a>
+          <a class="btn ghost" href="#menu">Ver Menu</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section about container">
+        <div class="about-grid">
+          <div>
+            <h2>Quem Somos</h2>
+            <p>O Sushi Laddin nasceu da paixão por sushi autêntico e por criar momentos. Usamos peixes selecionados, arroz preparado com cuidado e técnicas tradicionais com um toque contemporâneo.</p>
+            <ul>
+              <li>Ingredientes frescos e fornecedores locais</li>
+              <li>Sushi tradicional e versões autorais</li>
+              <li>Ambiente acolhedor e atendimento atencioso</li>
+            </ul>
+          </div>
+          <div class="about-photo">
+            <img src="assets/sobre.png" alt="Sushi"/>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="section container">
+        <h2>Destaques do Menu</h2>
+        <div class="cards">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3f8a4f6b5a9b2b6d" alt="Sushi chef" />
+            <h3>Sashimi Selecionado</h3>
+            <p>Seleção com sashimis, nigiris e makis feitos na hora.</p>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7c9a1a3b5d7f6e3b" alt="Maki" />
+            <h3>Hamburguer</h3>
+            <p>Versão autoral com molho especial e texturas crocantes.</p>
+          </article>
+          <article class="card">
+            <img src="assets/suchi.png" alt="Sashimi" />
+            <h3>Combinado Especial</h3>
+            <p>Fatiações finas com peixes frescos do dia, servidas com wasabi artesanal.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="reserva" class="section reserva container">
+        <div class="reserva-grid">
+          <div>
+            <h2>Reserve Sua Mesa</h2>
+            <p>Garanta um lugar para uma experiência gastronômica inesquecível.</p>
+            <form id="reservaForm" class="form">
+              <div class="form-row">
+                <input type="text" name="nome" id="nome" placeholder="Seu nome" required />
+                <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required />
+              </div>
+              <div class="form-row">
+                <input type="date" name="data" id="data" required />
+                <input type="number" name="pessoas" id="pessoas" placeholder="Pessoas" min="1" max="20" value="2" required />
+              </div>
+              <button class="btn primary" type="submit">Enviar Reserva</button>
+              <p id="reservaMsg" class="muted"></p>
+            </form>
+          </div>
+          <div class="map-photo">
+            <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=1c2f3b4a5d6e7f8a" alt="Interior do restaurante" />
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="section container contact">
+        <h2>Contato</h2>
+        <p>Endereço: Rua do Sabor, 123 — Centro • Telefone: (11) 99999-9999</p>
+        <div class="socials">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Sushi Laddin — Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
